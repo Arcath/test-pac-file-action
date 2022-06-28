@@ -7,6 +7,9 @@ inputs:
   url: # url to test
     description: 'the url to test again'
     required: true
+  result: #expected result
+    description: 'the expected result from the PAC File'
+    required: true
 outputs:
   result: # the result from the PAC file.
     description: 'The result of this PAC file test'

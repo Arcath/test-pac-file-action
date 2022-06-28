@@ -24,3 +24,4 @@ jobs:
         with:
           file: 'file://./samples/direct.pac'
           url: 'https://www.google.com'
+          result: 'DIRECT'
