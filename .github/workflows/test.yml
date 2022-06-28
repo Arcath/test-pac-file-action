@@ -1,4 +1,4 @@
-name: 'units-test'
+name: 'Tests'
 on:
   pull_request:
   push:
@@ -9,6 +9,7 @@ on:
 jobs:
   # unit tests
   units:
+    name: 🧪 Run Tests
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -17,10 +18,12 @@ jobs:
 
   # test action works running from the graph
   test:
+    name: 🏃‍♂️ Run Action
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: ./
+      - name: 1️⃣ Direct Only
+        uses: ./
         with:
           file: 'file://./samples/direct.pac'
           url: 'https://www.google.com'
