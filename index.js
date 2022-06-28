@@ -4,9 +4,10 @@ const testPacFile = require('./lib/test-pac-file')
 async function run() {
   try {
     const file = core.getInput('file')
-    core.info(`Testing ${test}`)
+    const url = core.getInput('url')
+    core.info(`Testing ${file}`)
 
-    const result = testPacFile({file})
+    const result = testPacFile({file, url})
 
     core.setOutput('result', result)
   } catch (error) {
