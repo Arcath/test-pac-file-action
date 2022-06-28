@@ -10,6 +10,8 @@ async function run() {
 
     const result = await testPacFile({file, url})
 
+    core.debug(`Result: ${result}`)
+
     core.setOutput('result', result)
 
     if (expectedResult !== result) {

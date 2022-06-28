@@ -1,4 +1,4 @@
-require('./sourcemap-register.js');/******/ (() => { // webpackBootstrap
+/******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
 /***/ 4848:
@@ -11328,6 +11328,8 @@ async function run() {
 
     const result = await testPacFile({file, url})
 
+    core.debug(`Result: ${result}`)
+
     core.setOutput('result', result)
 
     if (expectedResult !== result) {
@@ -11347,4 +11349,3 @@ run()
 module.exports = __webpack_exports__;
 /******/ })()
 ;
-//# sourceMappingURL=index.js.map
