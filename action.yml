@@ -1,13 +1,15 @@
-name: 'Wait'
-description: 'Wait a designated number of milliseconds'
+name: 'Test PAC File'
+description: 'Test the supplied PAC file against a result.'
 inputs:
-  milliseconds:  # id of input
-    description: 'number of milliseconds to wait'
+  file: # path to file
+    description: 'path to file'
     required: true
-    default: '1000'
+  url: # url to test
+    description: 'the url to test again'
+    required: true
 outputs:
-  time: # output will be available to future steps
-    description: 'The current time after waiting'
+  result: # the result from the PAC file.
+    description: 'The result of this PAC file test'
 runs:
   using: 'node16'
   main: 'dist/index.js'
