@@ -23,3 +23,4 @@ jobs:
       - uses: ./
         with:
           file: 'file://./samples/direct.pac'
+          url: 'https://www.google.com'
