@@ -11326,7 +11326,7 @@ async function run() {
     const expectedResult = core.getInput('result')
     core.info(`Testing ${file}`)
 
-    const result = testPacFile({file, url})
+    const result = await testPacFile({file, url})
 
     core.setOutput('result', result)
 
