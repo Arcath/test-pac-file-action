@@ -1,5 +1,7 @@
 name: 'Test PAC File'
 description: 'Test the supplied PAC file against a result.'
+icon: file-text
+color: blue
 inputs:
   file: # path to file
     description: 'path to file'
