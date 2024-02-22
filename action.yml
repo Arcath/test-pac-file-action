@@ -14,5 +14,5 @@ outputs:
   result: # the result from the PAC file.
     description: 'The result of this PAC file test'
 runs:
-  using: 'node16'
+  using: 'node20'
   main: 'dist/index.js'
